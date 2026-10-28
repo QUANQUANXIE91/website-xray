@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 — 2026-10-28
+- **证据纪律（强制）**：每条 P1/P2/P3 必须带 出处 URL + 发现日期 + 置信度（高/中/低）
+- 新增 **未确认事实清单** 报告章节：弱证据/推断结论单列，禁止写进邮件和开场话术
+- 长处吸收自 trade-customer-intel（SIEGER V2）的 claim/evidence 分离方法
+
 ## 1.2.1 — 2026-10-27
 - **多平台安装**：README 增加全平台安装表（Hermes / Codex CLI / Claude Code / Gemini CLI / Cursor / Accio Work / WorkBuddy），对齐 Agent Skills 开放标准（agentskills.io）
 - 新增 `agents/openai.yaml`：Codex CLI 可选元数据 sidecar
