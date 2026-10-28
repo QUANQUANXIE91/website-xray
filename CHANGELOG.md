@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.1 — 2026-10-27
+- **多平台安装**：README 增加全平台安装表（Hermes / Codex CLI / Claude Code / Gemini CLI / Cursor / Accio Work / WorkBuddy），对齐 Agent Skills 开放标准（agentskills.io）
+- 新增 `agents/openai.yaml`：Codex CLI 可选元数据 sidecar
+- 提供 `website-xray.zip` 技能包，供 Accio Work 等平台一键上传
+
 ## 1.2.0 — 2026-10-27
 - **通用化**：全库去行业化 —— 我方产品位改为占位符，README/示例/信号库不再绑定任一品类，任何外贸品类开箱即用
 - 新增 **供应链缺口体检表**（6 项 ✓/?/✗：交期/MOQ/认证/产能/价格带/售后），只有 ✗/? 进 P1-P3

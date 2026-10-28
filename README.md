@@ -34,21 +34,32 @@
 
 完整示例见 [`examples/`](examples/)（两份实战报告，客户侧已脱敏、我方产品位已占位符化）。
 
-## 快速开始
+## 安装（多平台）
 
-**在 Hermes Agent 中安装（本仓库即技能包）：**
+本仓库符合 **Agent Skills 开放标准**（[agentskills.io](https://agentskills.io)：`SKILL.md` + YAML frontmatter），同一份技能可直接装进 26+ 兼容平台，无需修改。
+
+| 平台 | 安装方式 |
+|------|---------|
+| **Hermes Agent** | `git clone https://github.com/QUANQUANXIE91/website-xray.git ~/.hermes/skills/customer-development/website-xray` |
+| **Codex CLI** | `git clone https://github.com/QUANQUANXIE91/website-xray.git ~/.codex/skills/website-xray`（项目级放 `.codex/skills/`；已附 `agents/openai.yaml` 元数据） |
+| **Claude Code** | clone 到 `~/.claude/skills/website-xray` |
+| **Gemini CLI** | clone 到 `~/.gemini/skills/website-xray` |
+| **Cursor / 其他** | 项目级 `.cursor/skills/website-xray`；完整兼容列表见 agentskills.io |
+| **Accio Work** | 技能页 → 「安装本地技能」→ 选择本文件夹；或用 `技能页 → 上传` 导入 `website-xray.zip` |
+| **WorkBuddy** | 无需单独安装 —— WorkBuddy 的 AI 引擎经 Hermes 调用技能，Hermes 装好即自动可用 |
+
+**通用三连（有哪个装哪个）：**
 
 ```bash
-git clone https://github.com/QUANQUANXIE91/website-xray.git \
-  ~/.hermes/skills/customer-development/website-xray
+git clone https://github.com/QUANQUANXIE91/website-xray.git
+cp -r website-xray ~/.codex/skills/       # Codex CLI
+cp -r website-xray ~/.claude/skills/      # Claude Code
+cp -r website-xray ~/.gemini/skills/      # Gemini CLI
 ```
 
-然后在对话里说：
-
-- 「官网透视 https://xxx.com」
-- 「透视这个客户」「分析官网」「这个客户缺什么」「寄什么样品」
-
 **独立使用（不依赖任何框架）：** 把 `SKILL.md` 当作给任意 LLM Agent 的 Prompt 规范即可 —— 它只需要两个能力：抓网页、搜网页。
+
+**装好后怎么唤起：** 「官网透视 https://xxx.com」「透视这个客户」「分析官网」「这个客户缺什么」「寄什么样品」
 
 ## 使用流程
 
